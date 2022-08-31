@@ -1,0 +1,28 @@
+\***\*\*\*\*\***Built in Modules\***\*\*\*\*\*\*\***
+
+( OS ) -used to get information about a computer's operating system. e.g) os.userInfo() os.uptime() os.type(), os.release() os.totalmem(), os.freemem()
+
+( PATH )- provides utilities for working with file and directory paths.
+path.join() joins paths using the seperator
+path.base() get the file at the end of the file path
+path.set(seperator /)
+path.resolve(\_\_dirname, content, subfolder, test.text) => returns the absolute path
+
+FS (FILESYSTEM) - contains all the functions you need to read, write, and delete files on the local machine.
+async and sync
+fs.readFileSync(path to specific file, encoding(utf8)) [reads the file and return its content]
+
+fs.writeFileSync(path, value you want to write) write data in files, synchronous (code blocking)
+if the file doesn't exist node will create the new value
+if it does exist ndoe will override the values in that file
+, if you use {flag:"a"} the value will be appended isntead of overriding
+
+async way
+
+method requires callback
+
+realFile("path", callback(err, result )=>{})
+
+writeFile()
+
+HTTP - allows Node. js to transfer data over the Hyper Text Transfer Protocol (HTTP).
